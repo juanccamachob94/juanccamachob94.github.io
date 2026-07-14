@@ -2,6 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
   "basics": {
     "name": "Juan Camilo Camacho Beltrán",
+    "image": "https://juanccamachob94.github.io/profile.jpg",
     "label": "Senior Full Stack Developer (Backend-focused) · Fully Remote",
     "email": "juanccamachob94@gmail.com",
     "phone": "+52 55 2128 9258",
