@@ -263,7 +263,6 @@
     {
       "name": "Sommos",
       "description": "Plataforma para la venta y distribución de alimentos sustentables: servicios expuestos vía API con autenticación JWT para la gestión de clientes y de sus tarjetas como método de pago, y CI/CD sobre AWS Elastic Beanstalk.",
-      "url": "",
       "keywords": [
         "APIs",
         "JWT",
@@ -275,7 +274,6 @@
     {
       "name": "Integración de servicios con IA",
       "description": "Generación de resúmenes con Amazon Bedrock a partir de una plantilla base: integra contenido transcrito con Whisper y aplica técnicas de prompt engineering para producir un resumen y un análisis derivado.",
-      "url": "",
       "keywords": [
         "Amazon Bedrock",
         "Whisper",
@@ -286,7 +284,6 @@
     {
       "name": "Mejora de video con IA",
       "description": "Pipeline con FFmpeg y Real-ESRGAN que identifica los FPS de un video, mejora la calidad de cada frame con IA y reconstruye el mismo video en mayor calidad.",
-      "url": "",
       "keywords": [
         "FFmpeg",
         "Real-ESRGAN",
@@ -297,7 +294,6 @@
     {
       "name": "Servidor multimedia self-hosted",
       "description": "Servicio de streaming personal (\"mi propio Netflix\") con Plex y Jellyfin sobre una Raspberry Pi, accesible de forma segura desde cualquier lugar mediante Tailscale. Incluye un pipeline que extrae los subtítulos en inglés de archivos MKV, los traduce al español y los reintegra al archivo original.",
-      "url": "",
       "keywords": [
         "Plex",
         "Jellyfin",
