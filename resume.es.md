@@ -1,0 +1,128 @@
+# Juan Camilo Camacho Beltrán
+
+**Desarrollador Fullstack Senior (foco Backend) · 100% Remoto**
+
+juanccamachob94@gmail.com · +52 55 2128 9258 · https://juanccamachob94.github.io/ · https://github.com/juanccamachob94
+
+Desarrollador fullstack con foco backend y 9 años de experiencia en medios digitales y fintech, hoy Gerente de Desarrollo liderando un equipo sin dejar de programar. Diseño arquitecturas de microservicios (NestJS, Docker, AWS) y he construido desde plataformas de contenido de alto tráfico hasta sistemas de inversión regulados en Ruby on Rails. Busco exclusivamente trabajo 100% remoto (full-time remote).
+
+## Experiencia
+
+### Gerente de Desarrollo — TV Azteca
+
+*jul 2025 – Actualidad · Ciudad de México, MX*
+
+Dirijo un equipo de 3 desarrolladores de la plataforma de contenidos digitales, combinando gestión (planeación de proyectos, análisis de requerimientos y diseño de soluciones) con desarrollo activo.
+
+- Diseñé y construí en solitario, en ~3 semanas, 2 middleware que centralizan la integración con 2 proveedores externos de servicios, encapsulando credenciales y complejidad de comunicación, sobre una nueva arquitectura de microservicios: NestJS, Drizzle, Docker, bus de eventos AWS SNS/SQS, despliegue en Fargate y patrones de idempotencia, outbox y caché resiliente.
+- Descompongo requerimientos complejos en tareas simples y ejecutables, y defino la planeación de los proyectos del equipo.
+- Garantizo la calidad y seguridad del código mediante revisiones, actualización de versiones, automatización de tareas y pruebas de concepto.
+- Coordino iniciativas de SEO, integración de servicios de terceros, construcción de módulos y optimización de servicios de contenido configurable.
+- Diseñé los pipelines de CI/CD en GitLab de los 2 middleware, de una aplicación de captura de eventos expuesta en Lambda y del nuevo administrador de contenidos, todos integrados vía APIs.
+- Construí por iniciativa propia herramientas internas para el equipo: registro de métricas de GitHub, recolectores de métricas de Google Lighthouse y CrUX (Chrome UX Report), detección de cambios de deploy en servidores de prueba, validación automática de páginas AMP y limpieza de bundles con recursos sin uso.
+- **Stack:** Java, JavaScript, TypeScript, NestJS, Drizzle ORM, Docker, AWS SNS, AWS SQS, AWS Fargate, Amazon ECS, Amazon ECR, ElastiCache (Redis), AWS Secrets Manager, CloudWatch, Amazon Bedrock, GitLab CI/CD, LocalStack, CSS
+
+### Líder de Desarrollo · Fullstack — TV Azteca
+
+*jul 2024 – jul 2025 · Ciudad de México, MX*
+
+Liderazgo técnico y definición de soluciones en la plataforma de contenidos digitales, con foco en la calidad del flujo de trabajo y el rendimiento del frontend.
+
+- Reduje el peso de las páginas fragmentando el build de scripts según las dependencias que cada página realmente necesita.
+- Transformé el flujo de trabajo del equipo: plantillas de TDD y de formatos de requerimientos, reglas de codificación, ordenamiento del código y cultura de tests.
+- Construí módulos reutilizables para la generación de módulos frontend, acelerando el desarrollo de nuevas secciones.
+- Automaticé tareas recurrentes con scripts programados (cron) y adopté herramientas de optimización del entorno de desarrollo (OrbStack).
+- **Stack:** Java, JavaScript, CSS, OrbStack, TDD
+
+### Líder de Desarrollo · Fullstack — TV Azteca — Fuerza Informativa Azteca (Azteca Noticias)
+
+*sep 2023 – jul 2024 · Ciudad de México, MX*
+
+Análisis y construcción de soluciones sobre la plataforma de contenidos del área de noticias, identificando necesidades técnicas que usuarios y PMs no alcanzaban a reconocer.
+
+- Creé un chat para transmisiones en vivo con salas de chat de AWS y microservicios: cliente en JavaScript, servidor/autenticador en Python y una Lambda de censura automática de lenguaje inapropiado.
+- Diseñé y desplegué un servicio de reportería ciudadana: los usuarios envían videos con noticias que se publican tras un flujo de validación, filtrado y reconstrucción.
+- Logré una mejora del 25% en la optimización SEO de los contenidos del sitio, y participé en su rediseño con nuevos componentes responsivos y administrables.
+- Construí un servicio de personalización de contenido para usuarios móviles.
+- Refactoricé numerosos módulos (limpieza y homogeneización visual, reutilización de código) y resolví errores que llevaban tanto tiempo en la plataforma que ya se habían normalizado.
+- Definí el flujo de trabajo y las guías de desarrollo del equipo con base en buenas prácticas.
+- **Stack:** Java, Kotlin, Python, JavaScript, Node.js, Ruby, Handlebars, Maven, CSS, AWS Lambda, OpenSearch, DynamoDB, Amazon S3, Amazon Personalize, API Gateway
+
+### Desarrollador Backend — TV Azteca — Baz
+
+*jul 2021 – sep 2023 · Ciudad de México, MX*
+
+Soluciones backend para proveer contenidos a la app Baz: artículos, videos, transmisiones en vivo y elementos de entretenimiento.
+
+- Construí la migración de la gestión de contenidos a un administrador externo: sitio en Next.js con backend en Python que unifica contenidos del CMS corporativo y de feeds RSS, identifica metadatos y publica a S3 para mejorar el performance.
+- Integré videojuegos a la app en colaboración con una consultora externa.
+- Automaticé el procesamiento de podcasts: lectura de episodios por proveedor, compresión e indexación parametrizada a las necesidades de la app móvil.
+- Reestructuré el algoritmo de captura de datos consumido por la app móvil, mejorando el performance, aportando nuevos metadatos y corrigiendo problemas de unicidad.
+- Construí un servicio de recomendación de noticias con IA (Amazon Personalize) según las categorías preferidas de cada usuario, y recreé módulos nativos de la app en su versión web.
+- Orquesté flujos de publicación con AWS Lambda, S3 y Amazon EventBridge.
+- **Stack:** Python, Java, Kotlin, Next.js, JavaScript, Node.js, Ruby, Maven, AWS Lambda, Amazon S3, Amazon EventBridge, OpenSearch, DynamoDB, Amazon Personalize, RSS
+
+### Desarrollador Backend — Play Business
+
+*nov 2019 – jul 2021 · Ciudad de México, MX*
+
+Desarrollo de la aplicación web de crowdfunding de la fintech (fondos de inversión colectiva para startups): contabilidad, categorización y regulación de usuarios con firmas digitales, doble autenticación, verificación contra servidores externos, auditoría, cifrado de datos sensibles y pruebas automatizadas.
+
+- Reestructuré el portafolio de inversiones (activas, canceladas, vendidas, recompradas y exitosas), incluyendo sus notificaciones y movimientos.
+- Mejoré la gestión de pagos para su correcta visualización y ejecución en procesos de inversión y reinversión.
+- Construí módulos de firmas digitales, gestión de datos bancarios, contratos, cuentas financieras y medición NPS.
+- **Stack:** Ruby, Ruby on Rails, PostgreSQL, Sidekiq, CircleCI, CoffeeScript, Chart.js, jQuery, FingerprintJS, Haml, JavaScript
+
+### Consultor de Desarrollo y Programación — Play Business
+
+*feb 2019 – oct 2019 · Ciudad de México, MX*
+
+- Desarrollé, integré, migré y probé (pruebas de campo y automatizadas) un nuevo modelo de cálculo para usuarios emprendedores bajo un esquema de múltiples rondas de inversión sobre un mismo vehículo de inversión.
+- **Stack:** Ruby, Ruby on Rails, PostgreSQL, Sidekiq, CircleCI, CoffeeScript, jQuery, Haml, JavaScript
+
+### Programador Freelance — Freelance
+
+*may 2018 – ene 2019 · Remote*
+
+Desarrollé ColaborativaEstudio: aplicación web y Android para apoyar la construcción de mapas conceptuales digitales a partir de documentos de lectura.
+
+- **Stack:** Java, Spring Boot, Maven, JSF, PrimeFaces, JavaScript, Materialize, Android
+
+### Analista TI e Ingeniero de Desarrollo — INIF (Instituto Nacional de Investigación y Prevención de Fraude)
+
+*feb 2017 – mar 2018 · Bogotá, CO*
+
+Ejecución de soluciones tecnológicas en cada ciclo de desarrollo, planificadas con una metodología híbrida entre cíclica y Scrum.
+
+- Reconfiguré las aplicaciones de servidor para minimizar costos de soporte y mantener versiones actualizadas.
+- Centralicé las fuentes de información de la compañía y publiqué un webservice SOAP con el que 2 nuevas empresas iniciaron intercambio de datos con INIF.
+- Automaticé procesos manuales que causaban errores constantes en la plataforma principal y generé la documentación de las aplicaciones.
+- **Stack:** Java EE, PHP, PrimeFaces, RichFaces, Hibernate, SQL Server, Maven
+
+## Habilidades
+
+- **Lenguajes:** JavaScript, TypeScript, Ruby, Python, Java, Kotlin
+- **Backend:** Ruby on Rails, Node.js, NestJS, Spring Boot, Flask, Sidekiq, Sequelize, Drizzle ORM, Hibernate, JWT, Stripe API
+- **Frontend:** React, Next.js, jQuery, SASS, CSS, Handlebars, Material Design, SEO, Google Lighthouse, Core Web Vitals, AMP
+- **Bases de datos:** PostgreSQL, MySQL, SQL Server, DynamoDB, OpenSearch, Oracle
+- **Cloud y DevOps:** AWS, AWS Lambda, API Gateway, SQS, SNS, EventBridge, ECS, ECR, Fargate, S3, EC2, ElastiCache, Redis, RDS, Secrets Manager, Parameter Store, CloudWatch, CodePipeline, CodeBuild, Elastic Beanstalk, Amazon Bedrock, Amazon Personalize, Docker, LocalStack, GitLab CI/CD, CircleCI, CI/CD, Git, GitHub
+
+## Educación
+
+- **Ingeniero de Sistemas, Ingeniería de Sistemas** — Universidad Distrital Francisco José de Caldas (2011 – 2017)
+
+## Certificaciones
+
+- **AWS Certified Cloud Practitioner (en curso)** — Amazon Web Services (Actualidad)
+
+## Proyectos
+
+- **Sommos**: Plataforma para la venta y distribución de alimentos sustentables: servicios expuestos vía API con autenticación JWT para la gestión de clientes y de sus tarjetas como método de pago, y CI/CD sobre AWS Elastic Beanstalk.
+- **Integración de servicios con IA**: Generación de resúmenes con Amazon Bedrock a partir de una plantilla base: integra contenido transcrito con Whisper y aplica técnicas de prompt engineering para producir un resumen y un análisis derivado.
+- **Mejora de video con IA**: Pipeline con FFmpeg y Real-ESRGAN que identifica los FPS de un video, mejora la calidad de cada frame con IA y reconstruye el mismo video en mayor calidad.
+- **Servidor multimedia self-hosted**: Servicio de streaming personal ("mi propio Netflix") con Plex y Jellyfin sobre una Raspberry Pi, accesible de forma segura desde cualquier lugar mediante Tailscale. Incluye un pipeline que extrae los subtítulos en inglés de archivos MKV, los traduce al español y los reintegra al archivo original.
+
+## Idiomas
+
+- Español: Nativo
+- Inglés: Intermedio-alto (B2)
