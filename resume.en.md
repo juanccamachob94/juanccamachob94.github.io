@@ -2,7 +2,7 @@
 
 **Senior Full Stack Developer (Backend-focused) · Fully Remote**
 
-juanccamachob94@gmail.com · +52 55 2128 9258 · https://juanccamachob94.github.io/ · https://github.com/juanccamachob94
+juanccamachob94@gmail.com · +52 55 2128 9258 · https://juanccamachob94.github.io/ · https://github.com/juanccamachob94 · https://www.linkedin.com/in/juanccamachob94/
 
 Full stack developer with a backend focus and 9 years of experience in digital media and fintech, now a Development Manager who still ships code. I design microservices architectures (NestJS, Docker, AWS) and have built everything from high-traffic content platforms to regulated investment systems in Ruby on Rails. Exclusively seeking fully remote, full-time positions.
 

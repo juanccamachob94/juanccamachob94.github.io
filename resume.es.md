@@ -2,7 +2,7 @@
 
 **Desarrollador Fullstack Senior (foco Backend) · 100% Remoto**
 
-juanccamachob94@gmail.com · +52 55 2128 9258 · https://juanccamachob94.github.io/ · https://github.com/juanccamachob94
+juanccamachob94@gmail.com · +52 55 2128 9258 · https://juanccamachob94.github.io/ · https://github.com/juanccamachob94 · https://www.linkedin.com/in/juanccamachob94/
 
 Desarrollador fullstack con foco backend y 9 años de experiencia en medios digitales y fintech, hoy Gerente de Desarrollo liderando un equipo sin dejar de programar. Diseño arquitecturas de microservicios (NestJS, Docker, AWS) y he construido desde plataformas de contenido de alto tráfico hasta sistemas de inversión regulados en Ruby on Rails. Busco exclusivamente trabajo 100% remoto (full-time remote).
 
