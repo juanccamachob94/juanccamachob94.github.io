@@ -5,26 +5,32 @@
 <meta name="robots" content="noindex">
 <title>Juan Camilo Camacho Beltrán — CV</title>
 <style>
+  /* --s la fija el script de autoajuste al final del <body>: 1 = densidad de
+     diseño, valores menores comprimen tipografía y espaciado a la par.
+     --f y --u son "pt" y "mm" escalables; el padding de página no escala. */
+  html { --s: 1; --f: calc(1pt * var(--s)); --u: calc(1mm * var(--s)); }
   @page { size: A4; margin: 0; }
   * { box-sizing: border-box; margin: 0; }
   html, body { width: 210mm; }
-  body { padding: 9mm 11mm; color: #1c2733; font: 9.1pt/1.32 -apple-system, "Segoe UI", Roboto, sans-serif; }
-  h1 { font-size: 17pt; line-height: 1.1; }
-  .label { color: #444f5a; font-size: 10pt; margin: 1mm 0 .5mm; }
-  .contact { color: #5b6b7b; font-size: 8pt; }
+  body { padding: 9mm 11mm; color: #1c2733;
+         font: calc(9.1 * var(--f))/1.32 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  h1 { font-size: calc(17 * var(--f)); line-height: 1.1; }
+  .label { color: #444f5a; font-size: calc(10 * var(--f)); margin: var(--u) 0 calc(.5 * var(--u)); }
+  .contact { color: #5b6b7b; font-size: calc(8 * var(--f)); }
   .contact a { color: #0b66c3; text-decoration: none; }
-  .links { margin-bottom: 2mm; }
-  h2 { font-size: 8.6pt; text-transform: uppercase; letter-spacing: .06em; color: #0b66c3;
-       border-bottom: .5pt solid #d7dee6; padding-bottom: .6mm; margin: 2.6mm 0 1.4mm; }
-  .summary { font-size: 8.9pt; }
-  .job { margin-bottom: 1.4mm; page-break-inside: avoid; }
-  .row { display: flex; justify-content: space-between; gap: 4mm; }
-  .jt { font-weight: 600; font-size: 9.1pt; }
+  .links { margin-bottom: calc(2 * var(--u)); }
+  h2 { font-size: calc(8.6 * var(--f)); text-transform: uppercase; letter-spacing: .06em; color: #0b66c3;
+       border-bottom: .5pt solid #d7dee6; padding-bottom: calc(.6 * var(--u));
+       margin: calc(2.6 * var(--u)) 0 calc(1.4 * var(--u)); }
+  .summary { font-size: calc(8.9 * var(--f)); }
+  .job { margin-bottom: calc(1.4 * var(--u)); page-break-inside: avoid; }
+  .row { display: flex; justify-content: space-between; gap: calc(4 * var(--u)); }
+  .jt { font-weight: 600; font-size: calc(9.1 * var(--f)); }
   .org { font-weight: 500; color: #3a4653; }
-  .dates { color: #5b6b7b; font-size: 8.2pt; white-space: nowrap; }
-  ul { padding-left: 4mm; margin-top: .4mm; }
-  li { font-size: 8.6pt; margin-bottom: .3mm; }
-  .skill, .line { font-size: 8.5pt; margin-bottom: .5mm; }
+  .dates { color: #5b6b7b; font-size: calc(8.2 * var(--f)); white-space: nowrap; }
+  ul { padding-left: calc(4 * var(--u)); margin-top: calc(.4 * var(--u)); }
+  li { font-size: calc(8.6 * var(--f)); margin-bottom: calc(.3 * var(--u)); }
+  .skill, .line { font-size: calc(8.5 * var(--f)); margin-bottom: calc(.5 * var(--u)); }
 </style>
 </head>
 <body>
@@ -36,32 +42,32 @@
 <section><h2>Experiencia</h2><div class="job">
     <div class="row"><span class="jt">Gerente de Desarrollo · <span class="org">TV Azteca</span></span>
     <span class="dates">jul 2025 – Actualidad</span></div>
-    <ul><li>Diseñé y construí en solitario, en ~3 semanas, 2 middleware que centralizan la integración con 2 proveedores externos de servicios, encapsulando credenciales y complejidad de comunicación, sobre una nueva arquitectura de microservicios: NestJS, Drizzle, Docker, bus de eventos AWS SNS/SQS, despliegue en Fargate y patrones de idempotencia, outbox y caché resiliente.</li><li>Descompongo requerimientos complejos en tareas simples y ejecutables, y defino la planeación de los proyectos del equipo.</li><li>Garantizo la calidad y seguridad del código mediante revisiones, actualización de versiones, automatización de tareas y pruebas de concepto.</li></ul>
+    <ul><li>Diseñé y construí en solitario, en ~3 semanas, 2 middleware que centralizan la integración con 2 proveedores externos de servicios, encapsulando credenciales y complejidad de comunicación, sobre una nueva arquitectura de microservicios: NestJS, Drizzle, Docker, bus de eventos AWS SNS/SQS, despliegue en Fargate y patrones de idempotencia, outbox y caché resiliente.</li><li>Descompongo requerimientos complejos en tareas simples y ejecutables, y defino la planeación de los proyectos del equipo.</li><li>Garantizo la calidad y seguridad del código mediante revisiones, actualización de versiones, automatización de tareas y pruebas de concepto.</li><li data-drop="24">Coordino iniciativas de SEO, integración de servicios de terceros, construcción de módulos y optimización de servicios de contenido configurable.</li><li data-drop="23">Diseñé los pipelines de CI/CD en GitLab de los 2 middleware, de una aplicación de captura de eventos expuesta en Lambda y del nuevo administrador de contenidos, todos integrados vía APIs.</li><li data-drop="22">Construí por iniciativa propia herramientas internas para el equipo: registro de métricas de GitHub, recolectores de métricas de Google Lighthouse y CrUX (Chrome UX Report), detección de cambios de deploy en servidores de prueba, validación automática de páginas AMP y limpieza de bundles con recursos sin uso.</li></ul>
   </div>
 <div class="job">
     <div class="row"><span class="jt">Líder de Desarrollo · Fullstack · <span class="org">TV Azteca</span></span>
     <span class="dates">jul 2024 – jul 2025</span></div>
-    <ul><li>Reduje el peso de las páginas fragmentando el build de scripts según las dependencias que cada página realmente necesita.</li></ul>
+    <ul><li>Reduje el peso de las páginas fragmentando el build de scripts según las dependencias que cada página realmente necesita.</li><li data-drop="21">Transformé el flujo de trabajo del equipo: plantillas de TDD y de formatos de requerimientos, reglas de codificación, ordenamiento del código y cultura de tests.</li><li data-drop="20">Construí módulos reutilizables para la generación de módulos frontend, acelerando el desarrollo de nuevas secciones.</li><li data-drop="19">Automaticé tareas recurrentes con scripts programados (cron) y adopté herramientas de optimización del entorno de desarrollo (OrbStack).</li></ul>
   </div>
 <div class="job">
     <div class="row"><span class="jt">Líder de Desarrollo · Fullstack · <span class="org">TV Azteca — Fuerza Informativa Azteca (Azteca Noticias)</span></span>
     <span class="dates">sep 2023 – jul 2024</span></div>
-    <ul><li>Creé un chat para transmisiones en vivo con salas de chat de AWS y microservicios: cliente en JavaScript, servidor/autenticador en Python y una Lambda de censura automática de lenguaje inapropiado.</li></ul>
+    <ul><li>Creé un chat para transmisiones en vivo con salas de chat de AWS y microservicios: cliente en JavaScript, servidor/autenticador en Python y una Lambda de censura automática de lenguaje inapropiado.</li><li data-drop="18">Diseñé y desplegué un servicio de reportería ciudadana: los usuarios envían videos con noticias que se publican tras un flujo de validación, filtrado y reconstrucción.</li><li data-drop="17">Logré una mejora del 25% en la optimización SEO de los contenidos del sitio, y participé en su rediseño con nuevos componentes responsivos y administrables.</li><li data-drop="16">Construí un servicio de personalización de contenido para usuarios móviles.</li><li data-drop="15">Refactoricé numerosos módulos (limpieza y homogeneización visual, reutilización de código) y resolví errores que llevaban tanto tiempo en la plataforma que ya se habían normalizado.</li><li data-drop="14">Definí el flujo de trabajo y las guías de desarrollo del equipo con base en buenas prácticas.</li></ul>
   </div>
 <div class="job">
     <div class="row"><span class="jt">Desarrollador Backend · <span class="org">TV Azteca — Baz</span></span>
     <span class="dates">jul 2021 – sep 2023</span></div>
-    <ul><li>Construí la migración de la gestión de contenidos a un administrador externo: sitio en Next.js con backend en Python que unifica contenidos del CMS corporativo y de feeds RSS, identifica metadatos y publica a S3 para mejorar el performance.</li></ul>
+    <ul><li data-drop="13">Construí la migración de la gestión de contenidos a un administrador externo: sitio en Next.js con backend en Python que unifica contenidos del CMS corporativo y de feeds RSS, identifica metadatos y publica a S3 para mejorar el performance.</li><li data-drop="12">Integré videojuegos a la app en colaboración con una consultora externa.</li><li data-drop="11">Automaticé el procesamiento de podcasts: lectura de episodios por proveedor, compresión e indexación parametrizada a las necesidades de la app móvil.</li><li data-drop="10">Reestructuré el algoritmo de captura de datos consumido por la app móvil, mejorando el performance, aportando nuevos metadatos y corrigiendo problemas de unicidad.</li><li data-drop="9">Construí un servicio de recomendación de noticias con IA (Amazon Personalize) según las categorías preferidas de cada usuario, y recreé módulos nativos de la app en su versión web.</li><li data-drop="8">Orquesté flujos de publicación con AWS Lambda, S3 y Amazon EventBridge.</li></ul>
   </div>
 <div class="job">
     <div class="row"><span class="jt">Desarrollador Backend · <span class="org">Play Business</span></span>
     <span class="dates">nov 2019 – jul 2021</span></div>
-    <ul><li>Reestructuré el portafolio de inversiones (activas, canceladas, vendidas, recompradas y exitosas), incluyendo sus notificaciones y movimientos.</li></ul>
+    <ul><li data-drop="7">Reestructuré el portafolio de inversiones (activas, canceladas, vendidas, recompradas y exitosas), incluyendo sus notificaciones y movimientos.</li><li data-drop="6">Mejoré la gestión de pagos para su correcta visualización y ejecución en procesos de inversión y reinversión.</li><li data-drop="5">Construí módulos de firmas digitales, gestión de datos bancarios, contratos, cuentas financieras y medición NPS.</li></ul>
   </div>
 <div class="job">
     <div class="row"><span class="jt">Consultor de Desarrollo y Programación · <span class="org">Play Business</span></span>
     <span class="dates">feb 2019 – oct 2019</span></div>
-    <ul><li>Desarrollé, integré, migré y probé (pruebas de campo y automatizadas) un nuevo modelo de cálculo para usuarios emprendedores bajo un esquema de múltiples rondas de inversión sobre un mismo vehículo de inversión.</li></ul>
+    <ul><li data-drop="4">Desarrollé, integré, migré y probé (pruebas de campo y automatizadas) un nuevo modelo de cálculo para usuarios emprendedores bajo un esquema de múltiples rondas de inversión sobre un mismo vehículo de inversión.</li></ul>
   </div>
 <div class="job">
     <div class="row"><span class="jt">Programador Freelance · <span class="org">Freelance</span></span>
@@ -71,14 +77,61 @@
 <div class="job">
     <div class="row"><span class="jt">Analista TI e Ingeniero de Desarrollo · <span class="org">INIF (Instituto Nacional de Investigación y Prevención de Fraude)</span></span>
     <span class="dates">feb 2017 – mar 2018</span></div>
-    
+    <ul><li data-drop="3">Reconfiguré las aplicaciones de servidor para minimizar costos de soporte y mantener versiones actualizadas.</li><li data-drop="2">Centralicé las fuentes de información de la compañía y publiqué un webservice SOAP con el que 2 nuevas empresas iniciaron intercambio de datos con INIF.</li><li data-drop="1">Automaticé procesos manuales que causaban errores constantes en la plataforma principal y generé la documentación de las aplicaciones.</li></ul>
   </div></section>
-<section><h2>Habilidades</h2><div class="skill"><strong>Lenguajes:</strong> JavaScript, TypeScript, Ruby, Python, Java, Kotlin</div><div class="skill"><strong>Backend:</strong> Ruby on Rails, Node.js, NestJS, Spring Boot, Flask, Sidekiq, Sequelize, Drizzle ORM, Hibernate</div><div class="skill"><strong>Frontend:</strong> React, Next.js, jQuery, SASS, CSS, Handlebars, Material Design, SEO, Google Lighthouse</div><div class="skill"><strong>Bases de datos:</strong> PostgreSQL, MySQL, SQL Server, DynamoDB, OpenSearch, Oracle</div><div class="skill"><strong>Cloud y DevOps:</strong> AWS, AWS Lambda, API Gateway, SQS, SNS, EventBridge, ECS, ECR, Fargate</div></section>
+<section><h2>Habilidades</h2><div class="skill"><strong>Lenguajes:</strong> JavaScript, TypeScript, Ruby, Python, Java, Kotlin</div><div class="skill"><strong>Backend:</strong> Ruby on Rails, Node.js, NestJS, Spring Boot, Flask, Sidekiq, Sequelize, Drizzle ORM, Hibernate, JWT, Stripe API</div><div class="skill"><strong>Frontend:</strong> React, Next.js, jQuery, SASS, CSS, Handlebars, Material Design, SEO, Google Lighthouse, Core Web Vitals, AMP</div><div class="skill"><strong>Bases de datos:</strong> PostgreSQL, MySQL, SQL Server, DynamoDB, OpenSearch, Oracle</div><div class="skill"><strong>Cloud y DevOps:</strong> AWS, AWS Lambda, API Gateway, SQS, SNS, EventBridge, ECS, ECR, Fargate, S3, EC2, ElastiCache, Redis, RDS, Secrets Manager, Parameter Store, CloudWatch, CodePipeline, CodeBuild, Elastic Beanstalk, Amazon Bedrock, Amazon Personalize, Docker, LocalStack, GitLab CI/CD, CircleCI, CI/CD, Git, GitHub</div></section>
 <section><h2>Educación y certificaciones</h2>
   <div class="line"><strong>Ingeniero de Sistemas, Ingeniería de Sistemas</strong> — Universidad Distrital Francisco José de Caldas (2011 – 2017)</div>
   <div class="line">AWS Certified Cloud Practitioner (en curso) — Amazon Web Services</div>
 </section>
-<section><h2>Proyectos</h2><div class="line"><strong>Sommos</strong> (APIs, JWT, Payments) · <strong>Integración de servicios con IA</strong> (Amazon Bedrock, Whisper, Prompt engineering) · <strong>Mejora de video con IA</strong> (FFmpeg, Real-ESRGAN, AI upscaling) · <strong>Servidor multimedia self-hosted</strong> (Plex, Jellyfin, Tailscale)</div></section>
+<section><h2>Proyectos</h2><div class="line"><strong>Sommos</strong> (APIs, JWT, Payments, AWS Elastic Beanstalk, CI/CD) · <strong>Integración de servicios con IA</strong> (Amazon Bedrock, Whisper, Prompt engineering, Ruby on Rails, LLM) · <strong>Mejora de video con IA</strong> (FFmpeg, Real-ESRGAN, AI upscaling, Python) · <strong>Servidor multimedia self-hosted</strong> (Plex, Jellyfin, Tailscale, Raspberry Pi, FFmpeg, Self-hosting)</div></section>
 <section><h2>Idiomas</h2><div class="line">Español (Nativo) · Inglés (Intermedio-alto (B2))</div></section>
+<script>
+(function () {
+  var html = document.documentElement, body = document.body;
+  var MIN = 0.70, STEPS = 12;
+
+  // Alto de página medido por el propio motor (evita asumir 96 dpi).
+  var probe = document.createElement('div');
+  probe.style.cssText = 'position:absolute;top:0;left:0;width:1mm;height:297mm;visibility:hidden';
+  body.appendChild(probe);
+  var limit = probe.offsetHeight * 0.997; // colchón para el redondeo a página
+  probe.remove();
+
+  var lis = Array.prototype.slice.call(document.querySelectorAll('li[data-drop]'));
+  var uls = Array.prototype.slice.call(document.querySelectorAll('ul'));
+  var height = function () { return Math.max(body.scrollHeight, body.offsetHeight); };
+  var fits = function (s) { html.style.setProperty('--s', s); return height() <= limit; };
+
+  function hideUpTo(k) {
+    lis.forEach(function (li) { li.hidden = Number(li.dataset.drop) <= k; });
+    uls.forEach(function (ul) { // no dejar listas vacías ocupando espacio
+      ul.hidden = !Array.prototype.slice.call(ul.children).some(function (c) { return !c.hidden; });
+    });
+  }
+
+  function bestScale() {
+    if (fits(1)) return 1;
+    if (!fits(MIN)) return null;
+    var lo = MIN, hi = 1;
+    for (var i = 0; i < STEPS; i++) {
+      var mid = (lo + hi) / 2;
+      if (fits(mid)) lo = mid; else hi = mid;
+    }
+    return lo;
+  }
+
+  var dropped = 0, scale = bestScale();
+  while (scale === null && dropped < lis.length) {
+    hideUpTo(++dropped);
+    scale = bestScale();
+  }
+  if (scale === null) scale = MIN; // no cabe ni vacío: que el CI lo detecte
+  html.style.setProperty('--s', scale);
+  html.dataset.fitScale = scale.toFixed(4);
+  html.dataset.fitDropped = String(dropped);
+  html.dataset.fitBullets = (lis.length - dropped) + '/' + lis.length;
+})();
+</script>
 </body>
 </html>
