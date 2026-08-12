@@ -1170,8 +1170,14 @@ const COL = {
 };
 
 /* -------------------------------- entrada --------------------------------- */
-function moveLane(dir) {
+/* `dirScreen` llega en coordenadas de PANTALLA: -1 = izquierda, +1 = derecha.
+   La cámara mira hacia +Z, así que el eje +X del mundo se ve a la IZQUIERDA de
+   la pantalla y -X a la derecha (LANEX va de -1.86 a +1.86, es decir de derecha
+   a izquierda en pantalla). Por eso se invierte aquí, en un único punto: el
+   resto de la función —y del juego— trabaja siempre en coordenadas de mundo. */
+function moveLane(dirScreen) {
   if (G.state !== 'run' || G.dead) return;
+  const dir = -dirScreen;                      // pantalla -> eje X del mundo
   const t = clamp(G.lane + dir, 0, 2);
   if (t === G.lane && G.laneT >= 1) {
     // rebote visual al intentar salir del carril exterior
